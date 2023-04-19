@@ -87,7 +87,7 @@ def scheduled_task():
     vlc_processes = start_videos(video_files)
 
 
-schedule.every().day.at("02:00").do(scheduled_task)
+schedule.every().day.at("11:30").do(scheduled_task)
 
 while datetime.datetime.now() < end_time:
     schedule.run_pending()
