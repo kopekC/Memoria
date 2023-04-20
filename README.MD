@@ -1,14 +1,20 @@
 # Memoria - A Project About the Fragility of Memories
 
-## Introduction
+## STATEMENT
 
-Memoria is a Python project that explores the fragile nature of memories and how they can be easily overwritten and lost over time. The project is inspired by the idea that memories are not fixed, but rather are constantly changing and fading away.
+MEMORIA is an immersive four-channel expanded cinema installation with specifically developed software and hardware components. It combines ethnographic research, science fiction, and “recombinatory” forms of cinema that appropriate found or pirated footage. The work intertwines two narrative planes: the dystopian vision of William Gibson’s Johnny Mnemonic (1981), one of the earliest cyberpunk short stories, and the real-world Cuban “offline internet”, the physical data distribution network Paquete Semanal. The work takes the form of a “documentary remake” in which actors, performers, and actual Paqueteros embody Gibson’s fictional characters. Havana stands in for the “Sprawl”, the urban dystopia Gibson describes as a ruin of the future where technological and scientific advances, such as artificial intelligence and cybernetics go hand in hand with the breakdown of the social order.
 
-## Objective
+MEMORIA’s narrative is presented on 4 synchronized screens that merge live-action footage with found footage from videos that have circulated in Cuba through the Paquete. These materials come from ARCA (Archive), an artwork consisting of a 64 TB server that contains the entire content of Paquete Semanal for an entire year (52 weekly issues). It remains the only large-scale archive of this ephemeral phenomenon.
 
-The objective of the project is to express this concept through a visual and auditory experience. The project consists of a set of videos that are corrupted with a noise filter, making them difficult to see and hear clearly. These videos are played on a loop using the VLC media player, creating a surreal and dream-like atmosphere.
+## TECHNICAL DESCRIPTION
 
-As the videos are corrupted and played repeatedly, they begin to lose their original form and content, mirroring the way memories can be overwritten and distorted over time. The project invites the viewer to contemplate the ephemeral nature of memories and the fleeting nature of human experience.
+Installation with 4 video channels, a central server, adapted hardware and software, and computer chairs.
+
+The installation surrounds the viewer with 4 synchronized screens of variable sizes, hanging from the ceiling and transparent so that the projected image can be seen from both sides. Between the screens are several rotating computer chairs that invite the audience to sit.
+
+To represent the protagonist's loss of memory, the work will slowly "die" over the course of the exhibition. For this purpose, we have developed a special hardware setup consisting of a computer with a video card with four 4K outputs, which acts as the central server of the installation. From this server, the four video channels and a 4.1 audio track are played back synchronously. This computer also runs Lost.CU a bash script that executes various programs that continuously manipulate the video: FFMPG, a powerful free software for video and audio transcoding, and two custom programs written in Ruby: Datamosh, which deletes segments of the video so they can be overwritten afterwards, and Moshy, which overwrites these empty segments with information copied from random other parts of the video.
+This process gives the impression that the visual information in the videos is gradually lost and the image progressively degrades. However, the process does just the opposite. The video files are enriched with their own information, so the file increases in size during this copy and overwrite process. Since there is no linear header in the file to convert these bits into pixels, they become visible as artifacts that affect the quality and smoothness of the videos. This automated, constant copying process not only corrupts the audiovisual material, but eventually also damages the hard disk where the project files are stored.
+The speed at which the material deteriorates is adjusted to the duration of the work's exhibition. The copy script basically operates like a tumor virus, like a cancer that makes the cells inside the host grow in a random and uncontrolled way. Every day it produces a new set of video files that amplifies the changes of the previous set: what appear to be subtle changes in the first generations of video files become more and more obvious in the later generations, eventually causing the information to become completely distorted over time as the video devours itself through the constant process of faulty replication. This process corresponds to what happens to Johnny in the narrative when he loses his own memories due to the overload of information in his brain.  
 
 ## Implementation
 
@@ -38,6 +44,24 @@ To use the Memoria project, you'll need to have Python and the VLC media player 
 ```
 python3 final.py
 ```
+
+## Authors
+
+[Nestor Siré](https://nestorsire.com/en/)
+
+[Steffen Köhn](http://steffenkoehn.com/)
+
+## Galery
+
+[AKSIOMA](https://aksioma.org/)
+
+## Code and Hardware
+
+KopeK
+
 ## Special thanks to:
 
 [g1smo](https://github.com/g1smo) for all the help with the audio, thanks m8 !
+
+
+## Made with :heart: and FOSS in :cuba:
