@@ -1,3 +1,6 @@
+"""
+This is the main execution file for the 'Memoria' project. It handles video playback and processing on a set schedule.
+"""
 #!/usr/bin/env python3
 import subprocess
 import time
