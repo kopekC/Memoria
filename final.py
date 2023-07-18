@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+print('Hello, World!')
 import subprocess
 import time
 import datetime
