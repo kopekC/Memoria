@@ -69,6 +69,7 @@ def stop_videos(vlc_processes):
         vlc_process.kill()
 
 
+# hola mundo
 end_time = datetime.datetime.now() + datetime.timedelta(days=30)
 
 # Play the videos immediately
