@@ -89,6 +89,9 @@ def scheduled_task():
 
 schedule.every().day.at("11:30").do(scheduled_task)
 
-while datetime.datetime.now() < end_time:
+for _ in range(43200):  # Runs every minute for 30 days
+    if datetime.datetime.now() >= end_time:
+        break
     print("hola mundo")
     schedule.run_pending()
+    time.sleep(60)  # Check for scheduled tasks every minute
