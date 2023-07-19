@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 import subprocess
-# hello world
 import time
 import datetime
 import schedule
 import threading
 import os
+# hello world
 
 
 def corrupt_video(input_file, output_file_template, initial_crf=30, noise_intensity=2):
