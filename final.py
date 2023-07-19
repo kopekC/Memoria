@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# hello world
 import subprocess
+# hello world
 import time
 import datetime
 import schedule
