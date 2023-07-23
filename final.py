@@ -1,8 +1,8 @@
-# hola mundo
 #!/usr/bin/env python3
 import subprocess
 import time
 import datetime
+# ive been isekaid
 import schedule
 import threading
 import os
