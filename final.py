@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import subprocess
-# hola mundo
 import time
+# hola mundo
 import datetime
 import schedule
 import threading
