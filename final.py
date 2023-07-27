@@ -1,4 +1,4 @@
-# hola mundo
+# ive been isekaid
 
 #!/usr/bin/env python3
 import subprocess
