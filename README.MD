@@ -77,9 +77,13 @@ deleted, and the temporary file is renamed to the original file name.
 ### `play_video(screen_number, video_file)`
 
 This function plays a given video file on the VLC media player, using the
-specified screen nuasdasdasd asdasd asdasd asd This function applies the
-corrupt_video() function to a set of input video files, creating a set of
-corrupted video files that will be played by the play_video() function.
+specifieasdasdasd
+
+### `process_videos()`
+
+This function applies the corrupt_video() function to a set of input video
+files, creating a set of corrupted video files that will be played by the
+play_video() function.
 
 ### `start_videos(video_files)`
 
@@ -89,10 +93,8 @@ of subprocess.Popen objects representing the running VLC processes.
 
 ### `stop_videos(vlc_processes)`
 
-This function stops a set of running VLC media player instances by killing their
-corresponding subprocess.Popen objects.
-
-The main script for the project is memoria.py, which sets up the schedule for
+This function stops a set of running VLC media player instances basdasdasdas
+asdasd asdas asdasr the project is memoria.py, which sets up the schedule for
 periodically corrupting and restarting the videos. The schedule is created using
 the schedule module, and the scheduled_task() function is called at a set time
 each day to stop the current videos, process new corrupted videos, and start
@@ -144,6 +146,6 @@ KopeK
 
 [g1smo](https://github.com/g1smo) for all the help with the audio, thanks m8 !
 
-asdasdas
-
 ## Made with :heart: and FOSS in :cuba:
+
+asdasdasd
