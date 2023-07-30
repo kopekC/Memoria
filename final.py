@@ -90,6 +90,11 @@ def scheduled_task():
 
 schedule.every().day.at("11:30").do(scheduled_task)
 
+def print_hola_mundo():
+    print('hola mundo')
+    
+print_hola_mundo()
+
 while datetime.datetime.now() < end_time:
     schedule.run_pending()
     time.sleep(60)  # Check for scheduled tasks every minute
