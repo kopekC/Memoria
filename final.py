@@ -1,5 +1,6 @@
-# Hello, world!
 #!/usr/bin/env python3
+print("hola mundo!")
+# Hello, world!
 import subprocess
 import time
 import datetime
