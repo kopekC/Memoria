@@ -1,4 +1,4 @@
-# Hello, world!
+# hello dude
 #!/usr/bin/env python3
 import subprocess
 import time
