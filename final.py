@@ -1,6 +1,6 @@
-# Check This out!
 # Hello, world!
 #!/usr/bin/env python3
+# que bola asere
 import subprocess
 import time
 import datetime
