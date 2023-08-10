@@ -1,6 +1,7 @@
 # Hello, world!
 # Why don't scientists trust atoms? Because they make up everything!
 # Why don't programmers like nature? It has too many bugs!
+# 🌈
 #!/usr/bin/env python3
 import subprocess
 import time
