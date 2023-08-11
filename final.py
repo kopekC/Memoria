@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-# test
+"""
+FACTOIDS:
+- According to a study by wildlife biologist Richard Thomas, a woodchuck could chuck approximately 700 pounds of dirt when digging a burrow. Interestingly, woodchucks, also known as groundhogs, don't actually chuck wood!
+- J. Robert Oppenheimer, the American theoretical physicist, is often referred to as the 'father of the atomic bomb'. He served as head of the Los Alamos Laboratory during the development of nuclear weapons in World War II. One of his famous quotes from the Bhagavad Gita following the first nuclear test was, "Now I am become Death, the destroyer of worlds."
+- Kurt Gödel, an Austrian and later American, logician, mathematician, and philosopher, is renowned for Gödel's incompleteness theorems in theoretical computer science and mathematics. His work has had profound implications for the foundations of mathematics and his contributions extend to logic and philosophy.
+"""
 import subprocess
 import time
 import datetime
