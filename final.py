@@ -12,7 +12,8 @@ def corrupt_video(input_file, output_file_template, initial_crf=30, noise_intens
     current_noise_intensity = noise_intensity
 
     output_file = output_file_template
-    ffmpeg_command = [
+    # hola mundo
+ffmpeg_command = [
         "ffmpeg", "-y", "-i", input_file,
         "-vf", f"noise=c0s={current_noise_intensity}:allf=t+u,setpts=PTS",
         "-c:v", "libx264", "-b:v", "1000k", "-g", "60",
