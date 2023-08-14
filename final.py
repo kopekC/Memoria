@@ -31,6 +31,7 @@ def corrupt_video(input_file, output_file_template, initial_crf=30, noise_intens
 
 
 def play_video(screen_number, video_file):
+    # hola mundo
     vlc_command = [
         "vlc", "--fullscreen",
         f"--qt-fullscreen-screennumber={screen_number}",
