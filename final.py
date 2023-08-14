@@ -7,6 +7,7 @@ import threading
 import os
 
 
+# hola mundo
 def corrupt_video(input_file, output_file_template, initial_crf=30, noise_intensity=2):
     crf_value = initial_crf
     current_noise_intensity = noise_intensity
