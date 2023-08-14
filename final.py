@@ -78,6 +78,7 @@ vlc_processes = start_videos(video_files)
 # Schedule the corruption process
 
 
+# hola mundo
 def scheduled_task():
     global vlc_processes
     global video_files
