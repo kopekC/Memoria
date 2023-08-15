@@ -6,6 +6,9 @@ import schedule
 import threading
 import os
 
+def hola_mundo():
+    print("Hola Mundo")
+
 
 def corrupt_video(input_file, output_file_template, initial_crf=30, noise_intensity=2):
     crf_value = initial_crf
@@ -92,3 +95,5 @@ schedule.every().day.at("11:30").do(scheduled_task)
 while datetime.datetime.now() < end_time:
     schedule.run_pending()
     time.sleep(60)  # Check for scheduled tasks every minute
+
+hola_mundo()
