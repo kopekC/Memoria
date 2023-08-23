@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+
+# Hola asere
+
 import subprocess
 import time
 import datetime
