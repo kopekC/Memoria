@@ -1,102 +1,47 @@
 # Memoria - A Project About the Fragility of Memories
 
-## STATEMENT
+## Table of Contents
+- [Summary](#summary)
+- [Technical Description](#technical-description)
+- [Implementation](#implementation)
+- [Usage](#usage)
+- [Authors](#authors)
+- [Gallery](#gallery)
+- [Code and Hardware](#code-and-hardware)
+- [Special Thanks](#special-thanks)
 
-MEMORIA is an immersive four-channel expanded cinema installation with
-specifically developed software and hardware components. It combines
-ethnographic research, science fiction, and “recombinatory” forms of cinema that
-appropriate found or pirated footage. The work intertwines two narrative planes:
-the dystopian vision of William Gibson’s Johnny Mnemonic (1981), one of the
-earliest cyberpunk short stories, and the real-world Cuban “offline internet”,
-the physical data distribution network Paquete Semanal. The work takes the form
-of a “documentary remake” in which actors, performers, and actual Paqueteros
-embody Gibson’s fictional characters. Havana stands in for the “Sprawl”, the
-urban dystopia Gibson describes as a ruin of the future where technological and
-scientific advances, such as artificial intelligence and cybernetics go hand in
-hand with the breakdown of the social order.
+## Summary
 
-MEMORIA’s narrative is presented on 4 synchronized screens that merge
-live-action footage with found footage from videos that have circulated in Cuba
-through the Paquete. These materials come from ARCA (Archive), an artwork
-consisting of a 64 TB server that contains the entire content of Paquete Semanal
-for an entire year (52 weekly issues). It remains the only large-scale archive
-of this ephemeral phenomenon.
+MEMORIA is a four-channel expanded cinema installation combining
+ethnographic research, science fiction, and forms of cinema using found or pirated footage. It combines the dystopian narrative of William Gibson’s Johnny Mnemonic (1981) and the real-world Cuban “offline internet”, the Paquete Semanal. Actors and actual Paqueteros portray Gibson’s characters in this "documentary remake." The narrative is displayed on 4 synchronized screens, amalgamating
+live-action and Paquete-based found footage, archived in ARCA (Archive).
 
-## TECHNICAL DESCRIPTION
+## Technical Description
 
-Installation with 4 video channels, a central server, adapted hardware and
-software, and computer chairs.
+MEMORIA employs a unique physical and software setup for a four-channel installation. The hardware revolves around a computer with a video card supporting four 4K outputs. This central server synchronously runs the four video channels and a 4.1 audio track. The server runs a bash script, Lost.CU, executing various programs including FFMPG, and custom Ruby programs, Datamosh and Moshy, that continuously manipulates the video. This mechanism imitates the process of memory loss, visually represented by a gradual degradation of visual information and quality. Counterintuitively, the video files enrich with their own information every day and increase in size throughout their faulty replication process. The deterioration speed is calibrated to the duration of the exhibition, and the process can be compared metaphorically to cancerous growth.
 
-The installation surrounds the viewer with 4 synchronized screens of variable
-sizes, hanging from the ceiling and transparent so that the projected image can
-be seen from both sides. Between the screens are several rotating computer
-chairs that invite the audience to sit.
 
-To represent the protagonist's loss of memory, the work will slowly "die" over
-the course of the exhibition. For this purpose, we have developed a special
-hardware setup consisting of a computer with a video card with four 4K outputs,
-which acts as the central server of the installation. From this server, the four
-video channels and a 4.1 audio track are played back synchronously. This
-computer also runs Lost.CU a bash script that executes various programs that
-continuously manipulate the video: FFMPG, a powerful free software for video and
-audio transcoding, and two custom programs written in Ruby: Datamosh, which
-deletes segments of the video so they can be overwritten afterwards, and Moshy,
-which overwrites these empty segments with information copied from random other
-parts of the video. This process gives the impression that the visual
-information in the videos is gradually lost and the image progressively
-degrades. However, the process does just the opposite. The video files are
-enriched with their own information, so the file increases in size during this
-copy and overwrite process. Since there is no linear header in the file to
-convert these bits into pixels, they become visible as artifacts that affect the
-quality and smoothness of the videos. This automated, constant copying process
-not only corrupts the audiovisual material, but eventually also damages the hard
-disk where the project files are stored. The speed at which the material
-deteriorates is adjusted to the duration of the work's exhibition. The copy
-script basically operates like a tumor virus, like a cancer that makes the cells
-inside the host grow in a random and uncontrolled way. Every day it produces a
-new set of video files that amplifies the changes of the previous set: what
-appear to be subtle changes in the first generations of video files become more
-and more obvious in the later generations, eventually causing the information to
-become completely distorted over time as the video devours itself through the
-constant process of faulty replication. This process corresponds to what happens
-to Johnny in the narrative when he loses his own memories due to the overload of
-information in his brain.
+
 
 ## Implementation
 
-The Memoria project is implemented using Python and the VLC media player. The
-main components of the project include:
+The key components of the Memoria project, implemented with Python and the VLC media player, are:
 
 ### `corrupt_video(input_file, output_file_template, initial_crf=30, noise_intensity=2)`
-
-This function takes an input video file and applies a noise filter to it using
-FFmpeg. The corrupted video is saved as a temporary file with a new name
-specified by the output_file_template parameter. The original input file is then
-deleted, and the temporary file is renamed to the original file name.
+This function applies a noise filter to an input video file, renames it, and deletes the original file.
 
 ### `play_video(screen_number, video_file)`
-
-This function plays a given video file on the VLC media player, using the
-specified screen nuasdasdasd asdasd asdasd asd This function applies the
-corrupt_video() function to a set of input video files, creating a set of
-corrupted video files that will be played by the play_video() function.
+This function plays a specified video file on the VLC media player. 
 
 ### `start_videos(video_files)`
-
-This function starts a set of VLC media player instances, each playing one of
-the given video files using a unique screen number. The function returns a list
-of subprocess.Popen objects representing the running VLC processes.
+Starts instances of the VLC media player for each video file. 
 
 ### `stop_videos(vlc_processes)`
+Stops all running VLC media player instances.
 
-This function stops a set of running VLC media player instances by killing their
-corresponding subprocess.Popen objects.
+In the main script, memoria.py, a schedule is set for periodically corrupting and restarting the videos.
 
-The main script for the project is memoria.py, which sets up the schedule for
-periodically corrupting and restarting the videos. The schedule is created using
-the schedule module, and the scheduled_task() function is called at a set time
-each day to stop the current videos, process new corrupted videos, and start
-playing them.
+
 
 ## Usage
 
@@ -108,42 +53,16 @@ directory, and run the following command:
 python3 final.py
 ```
 
-## Authors
+None
 
-[Nestor Siré](https://nestorsire.com/en/)
-
-[Steffen Köhn](http://steffenkoehn.com/)
 
 ## Galery
 
 [AKSIOMA](https://aksioma.org/)
 
-## Issues
+None
 
-### Missing HDMI audio outputs
 
-When the project was set up in Aksioma, HDMI audio interfaces failed to appear.
-Seems it was a bug in Ubuntu 22.10 (or was it 23.04?) default kernel. Upgrading
-to the latest 6.1 kernel fixed that. There's a handy script
-[here](https://github.com/pimlie/ubuntu-mainline-kernel.sh). Usually running the
-latest kernel is not the best choice but in this case, bugs were fixed.
+None
 
-### Audio outputs do not match projections
 
-Audio interfaces appeared but speakers did not match the projections shown. So
-we switched VLC to JACK audio and modified the script to include the video IDs
-in audio output names. Then used [qpwgraph](https://github.com/rncbc/qpwgraph)
-to match audio outputs to projections. Connections can be persisted so future
-glitched videos still match outputs.
-
-## Code and Hardware
-
-KopeK
-
-## Special thanks to:
-
-[g1smo](https://github.com/g1smo) for all the help with the audio, thanks m8 !
-
-asdasdas
-
-## Made with :heart: and FOSS in :cuba:
