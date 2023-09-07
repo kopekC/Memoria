@@ -144,6 +144,5 @@ KopeK
 
 [g1smo](https://github.com/g1smo) for all the help with the audio, thanks m8 !
 
-asdasdas
 
 ## Made with :heart: and FOSS in :cuba:
