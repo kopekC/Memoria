@@ -64,7 +64,10 @@ information in his brain.
 
 ## Implementation
 
-The Memoria project is implemented using Python and the VLC media player. The
+<!-- hola mundo -->
+
+The Memoria project is implemented using Python and the VLC media player
+ The
 main components of the project include:
 
 ### `corrupt_video(input_file, output_file_template, initial_crf=30, noise_intensity=2)`
