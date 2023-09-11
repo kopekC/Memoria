@@ -1,4 +1,4 @@
-# hola mundo
+# hola mundo ⭐
 #!/usr/bin/env python3
 import subprocess
 import time
