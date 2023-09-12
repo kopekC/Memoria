@@ -1,11 +1,18 @@
 # Memoria - A Project About the Fragility of Memories - 
 
+
+
+
+
 ## STATEMENT
 
 MEMORIA is an immersive four-channel expanded cinema installation with
 specifically developed software and hardware components. It combines
 ethnographic research, science fiction, and “recombinatory” forms of cinema that
 appropriate found or pirated footage. The work intertwines two narrative planes:
+
+
+
 the dystopian vision of William Gibson’s Johnny Mnemonic (1981), one of the
 earliest cyberpunk short stories, and the real-world Cuban “offline internet”,
 the physical data distribution network Paquete Semanal. The work takes the form
@@ -13,45 +20,45 @@ of a “documentary remake” in which actors, performers, and actual Paqueteros
 embody Gibson’s fictional characters. Havana stands in for the “Sprawl”, the
 urban dystopia Gibson describes as a ruin of the future where technological and
 scientific advances, such as artificial intelligence and cybernetics go hand in
-hand with the breakdown of the social order.
-
-MEMORIA’s narrative is presented on 4 synchronized screens that merge
-live-action footage with found footage from videos that have circulated in Cuba
-through the Paquete. These materials come from ARCA (Archive), an artwork
-consisting of a 64 TB server that contains the entire content of Paquete Semanal
-for an entire year (52 weekly issues). It remains the only large-scale archive
-of this ephemeral phenomenon.
-
-## TECHNICAL DESCRIPTION
-
-Installation with 4 video channels, a central server, adapted hardware and
-software, and computer chairs.
-
-The installation surrounds the viewer with 4 synchronized screens of variable
-sizes, hanging from the ceiling and transparent so that the projected image can
-be seen from both sides. Between the screens are several rotating computer
-chairs that invite the audience to sit.
-
-To represent the protagonist's loss of memory, the work will slowly "die" over
-the course of the exhibition. For this purpose, we have developed a special
-hardware setup consisting of a computer with a video card with four 4K outputs,
-which acts as the central server of the installation. From this server, the four
-video channels and a 4.1 audio track are played back synchronously. This
-computer also runs Lost.CU a bash script that executes various programs that
-continuously manipulate the video: FFMPG, a powerful free software for video and
-audio transcoding, and two custom programs written in Ruby: Datamosh, which
-deletes segments of the video so they can be overwritten afterwards, and Moshy,
-which overwrites these empty segments with information copied from random other
-parts of the video. This process gives the impression that the visual
-information in the videos is gradually lost and the image progressively
-degrades. However, the process does just the opposite. The video files are
-enriched with their own information, so the file increases in size during this
-copy and overwrite process. Since there is no linear header in the file to
-convert these bits into pixels, they become visible as artifacts that affect the
-quality and smoothness of the videos. This automated, constant copying process
-not only corrupts the audiovisual material, but eventually also damages the hard
+asdasdhand with the breakdown of the social order.
+a
+MsdaEMORIA’s narrative is presented on 4 synchronized screens that merge
+lives-action footage with found footage from videos that have circulated in Cuba
+throudgh the Paquete. These materials come from ARCA (Archive), an artwork
+consisasting of a 64 TB server that contains the entire content of Paquete Semanal
+for an edntire year (52 weekly issues). It remains the only large-scale archive
+of this easphemeral phenomenon.
+d
+#as# TECHNICAL DESCRIPTION
+d
+Iasnstallation with 4 video channels, a central server, adapted hardware and
+sofdtware, and computer chairs.
+as
+Thde installation surrounds the viewer with 4 synchronized screens of variable
+sizases, hanging from the ceiling and transparent so that the projected image can
+be seden from both sides. Between the screens are several rotating computer
+chairsas that invite the audience to sit.
+da
+Tos represent the protagonist's loss of memory, the work will slowly "die" over
+theda course of the exhibition. For this purpose, we have developed a special
+hardwsdare setup consisting of a computer with a video card with four 4K outputs,
+which aacts as the central server of the installation. From this server, the four
+video chsannels and a 4.1 audio track are played back synchronously. This
+computer daalso runs Lost.CU a bash script that executes various programs that
+continuouslsy manipulate the video: FFMPG, a powerful free software for video and
+audio transcdoding, and two custom programs written in Ruby: Datamosh, which
+deletes segmeasnts of the video so they can be overwritten afterwards, and Moshy,
+which overwriteds these empty segments with information copied from random other
+parts of the vidaseo. This process gives the impression that the visual
+information in theda videos is gradually lost and the image progressively
+degrades. However, tsdhe process does just the opposite. The video files are
+enriched with their owan information, so the file increases in size during this
+copy and overwrite procsdess. Since there is no linear header in the file to
+convert these bits into pasixels, they become visible as artifacts that affect the
+quality and smoothness of tdhe videos. This automated, constant copying process
+not only corrupts the audiovasdisual material, but eventually also damages the hard
 disk where the project files are stored. The speed at which the material
-deteriorates is adjusted to the duration of the work's exhibition. The copy
+deteriorates is adjusted to thead duration of the work's exhibition. The copy
 script basically operates like a tumor virus, like a cancer that makes the cells
 inside the host grow in a random and uncontrolled way. Every day it produces a
 new set of video files that amplifies the changes of the previous set: what
