@@ -1,4 +1,4 @@
-# Memoria - A Project About the Fragility of Memories - 
+# Memoria - A Project About the Fragility of Memories -
 
 ## STATEMENT
 
@@ -50,17 +50,9 @@ copy and overwrite process. Since there is no linear header in the file to
 convert these bits into pixels, they become visible as artifacts that affect the
 quality and smoothness of the videos. This automated, constant copying process
 not only corrupts the audiovisual material, but eventually also damages the hard
-disk where the project files are stored. The speed at which the material
-deteriorates is adjusted to the duration of the work's exhibition. The copy
-script basically operates like a tumor virus, like a cancer that makes the cells
-inside the host grow in a random and uncontrolled way. Every day it produces a
-new set of video files that amplifies the changes of the previous set: what
-appear to be subtle changes in the first generations of video files become more
-and more obvious in the later generations, eventually causing the information to
-become completely distorted over time as the video devours itself through the
-constant process of faulty replication. This process corresponds to what happens
-to Johnny in the narrative when he loses his own memories due to the overload of
 information in his brain.
+
+love is shit
 
 ## Implementation
 
@@ -143,6 +135,5 @@ KopeK
 ## Special thanks to:
 
 [g1smo](https://github.com/g1smo) for all the help with the audio, thanks m8 !
-
 
 ## Made with :heart: and FOSS in :cuba:
