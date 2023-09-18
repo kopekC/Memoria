@@ -1,5 +1,3 @@
-# Memoria - A Project About the Fragility of Memories - 
-
 ## STATEMENT
 
 MEMORIA is an immersive four-channel expanded cinema installation with
@@ -32,17 +30,8 @@ sizes, hanging from the ceiling and transparent so that the projected image can
 be seen from both sides. Between the screens are several rotating computer
 chairs that invite the audience to sit.
 
-To represent the protagonist's loss of memory, the work will slowly "die" over
-the course of the exhibition. For this purpose, we have developed a special
-hardware setup consisting of a computer with a video card with four 4K outputs,
-which acts as the central server of the installation. From this server, the four
-video channels and a 4.1 audio track are played back synchronously. This
-computer also runs Lost.CU a bash script that executes various programs that
-continuously manipulate the video: FFMPG, a powerful free software for video and
-audio transcoding, and two custom programs written in Ruby: Datamosh, which
-deletes segments of the video so they can be overwritten afterwards, and Moshy,
-which overwrites these empty segments with information copied from random other
-parts of the video. This process gives the impression that the visual
+love sucks
+
 information in the videos is gradually lost and the image progressively
 degrades. However, the process does just the opposite. The video files are
 enriched with their own information, so the file increases in size during this
@@ -61,6 +50,8 @@ become completely distorted over time as the video devours itself through the
 constant process of faulty replication. This process corresponds to what happens
 to Johnny in the narrative when he loses his own memories due to the overload of
 information in his brain.
+
+it really does sucks
 
 ## Implementation
 
@@ -143,6 +134,5 @@ KopeK
 ## Special thanks to:
 
 [g1smo](https://github.com/g1smo) for all the help with the audio, thanks m8 !
-
 
 ## Made with :heart: and FOSS in :cuba:
