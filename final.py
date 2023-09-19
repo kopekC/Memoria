@@ -7,6 +7,11 @@ import threading
 import os
 
 
+"""
+This function corrupts a given video file by adding noise via FFmpeg.
+The input video is deleted after its corrupted version has been created.
+The temporary corrupted file is then renamed to the original input file name.
+"""
 def corrupt_video(input_file, output_file_template, initial_crf=30, noise_intensity=2):
     crf_value = initial_crf
     current_noise_intensity = noise_intensity
@@ -30,6 +35,9 @@ def corrupt_video(input_file, output_file_template, initial_crf=30, noise_intens
     return input_file
 
 
+"""
+This function plays a video file on the specified VLC media player, using the specified screen number.
+"""
 def play_video(screen_number, video_file):
     vlc_command = [
         "vlc", "--fullscreen",
@@ -43,6 +51,9 @@ def play_video(screen_number, video_file):
     return vlc_process
 
 
+"""
+This function processes a list of video files by corrupting them using corrupt_video function.
+"""
 def process_videos():
     video_files = [f"screen-{i}.mp4" for i in range(1, 5)]
 
@@ -54,7 +65,14 @@ def process_videos():
     return video_files
 
 
+"""
+This function starts a list of VLC media player instances, each playing a video file from the given list.
+Each video is assigned a unique screen number. 
+A list of undergoing VLC processes is returned.
+"""
 def start_videos(video_files):
+
+
     vlc_processes = []
 
     for i, video_file in enumerate(video_files):
@@ -64,7 +82,12 @@ def start_videos(video_files):
     return vlc_processes
 
 
+"""
+The function attempts to stop a running list of VLC processes by killing their respective processes.
+"""
 def stop_videos(vlc_processes):
+
+
     for vlc_process in vlc_processes:
         vlc_process.kill()
 
@@ -78,6 +101,10 @@ vlc_processes = start_videos(video_files)
 # Schedule the corruption process
 
 
+"""
+This function defines the schedule for stopping videos, Processing new corrupted videos,
+and starting playing those videos on VLC player.
+"""
 def scheduled_task():
     global vlc_processes
     global video_files
