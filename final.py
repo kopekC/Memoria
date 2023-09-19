@@ -8,6 +8,19 @@ import os
 
 
 def corrupt_video(input_file, output_file_template, initial_crf=30, noise_intensity=2):
+        """
+    Corrupts a video file using the ffmpeg command-line tool.
+    
+    Args:
+        input_file (str): Path to the input video file.
+        output_file_template (str): Path template for the output file.
+        initial_crf (int): Initial constant rate factor for video compression.
+        noise_intensity (int): Intensity of the noise to be added to the video.
+    
+    Returns:
+        str: Path to the corrupted video file.
+    """
+
     crf_value = initial_crf
     current_noise_intensity = noise_intensity
 
@@ -31,6 +44,17 @@ def corrupt_video(input_file, output_file_template, initial_crf=30, noise_intens
 
 
 def play_video(screen_number, video_file):
+        """
+    Plays a video file using VLC media player in fullscreen mode.
+    
+    Args:
+        screen_number (int): The screen number to play the video on.
+        video_file (str): Path to the video file to be played.
+    
+    Returns:
+        subprocess.Popen: Process object of the VLC player.
+    """
+
     vlc_command = [
         "vlc", "--fullscreen",
         f"--qt-fullscreen-screennumber={screen_number}",
@@ -44,6 +68,13 @@ def play_video(screen_number, video_file):
 
 
 def process_videos():
+        """
+    Process multiple video files to corrupt them.
+    
+    Returns:
+        list: List of paths to the corrupted video files.
+    """
+
     video_files = [f"screen-{i}.mp4" for i in range(1, 5)]
 
     for i, video_file in enumerate(video_files):
@@ -55,6 +86,16 @@ def process_videos():
 
 
 def start_videos(video_files):
+        """
+    Start playing a list of video files in fullscreen mode.
+    
+    Args:
+        video_files (list): List of paths to the video files to be played.
+    
+    Returns:
+        list: List of VLC process objects.
+    """
+
     vlc_processes = []
 
     for i, video_file in enumerate(video_files):
@@ -65,6 +106,13 @@ def start_videos(video_files):
 
 
 def stop_videos(vlc_processes):
+        """
+    Terminate the VLC processes that are playing videos.
+    
+    Args:
+        vlc_processes (list): List of VLC process objects to be terminated.
+    """
+
     for vlc_process in vlc_processes:
         vlc_process.kill()
 
@@ -79,6 +127,11 @@ vlc_processes = start_videos(video_files)
 
 
 def scheduled_task():
+        """
+    Scheduled task that stops the video playback, corrupts the video files,
+    and restarts the video playback.
+    """
+
     global vlc_processes
     global video_files
 

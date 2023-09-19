@@ -1,4 +1,4 @@
-# Memoria - A Project About the Fragility of Memories - 
+# Memoria - A Project About the Fragility of Memories -
 
 ## STATEMENT
 
@@ -61,6 +61,8 @@ become completely distorted over time as the video devours itself through the
 constant process of faulty replication. This process corresponds to what happens
 to Johnny in the narrative when he loses his own memories due to the overload of
 information in his brain.
+
+hola mundo
 
 ## Implementation
 
@@ -143,6 +145,5 @@ KopeK
 ## Special thanks to:
 
 [g1smo](https://github.com/g1smo) for all the help with the audio, thanks m8 !
-
 
 ## Made with :heart: and FOSS in :cuba:
