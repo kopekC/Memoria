@@ -1,3 +1,4 @@
+Hello World!\n
 # Memoria - A Project About the Fragility of Memories - 
 
 ## STATEMENT
