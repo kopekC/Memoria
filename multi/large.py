@@ -5,6 +5,9 @@ print("Line 3")
 print("Line 4")
 print("Line 5")
 print("Line 3")
+print("Line 5")
+print("Line 5")
+print("Line 3")
 print("Line 3")
 print("Line 3")
 print("Line 3")
@@ -15,8 +18,18 @@ print("Line 500")
 
 # Middle of the file (this section will be the conflicting area)
 def function_middle():
+<<<<<<< HEAD
 print("Function in the middle from MAIN1")
 print("Function in the middle from LOL")
+=======
+    print("Function in the middle from MAIN1")
+    print("Function in the middle from MAIN1")
+    print("Function in the middle from MAIN1")
+    print("Function in the middle from MAIN1")
+    print("Function in the middle from MAIN1")
+    print("Function in the middle from MAIN1")
+    print("Function in the middle from MAIN1")
+>>>>>>> main
 
 print("Line 501")
 print("Line 502")
