@@ -1,4 +1,4 @@
-# Memoria - A Project About the Fragility of Memories - 
+# Memoria - A Project About the Fragility of Memories -
 
 ## STATEMENT
 
@@ -144,5 +144,4 @@ KopeK
 
 [g1smo](https://github.com/g1smo) for all the help with the audio, thanks m8 !
 
-
-## Made with :heart: and FOSS in :cuba:
+## Made with :heart: and FOSS in :cuba: :rainbow: :rainbow:
